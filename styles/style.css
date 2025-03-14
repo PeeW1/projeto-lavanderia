@@ -52,7 +52,7 @@
     width: 100vw;
     height: 70vh;
     overflow-x: hidden;
-    background-image: url(/img/Img_banner_tapetes.webp);
+    background-image: url(../img/Img_banner_tapetes.webp);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
