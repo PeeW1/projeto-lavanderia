@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Big+Shoulders+Stencil:opsz,wght@10..72,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alike&display=swap');
+@import url(/styles/secondContent.css);
+@import url(/styles/thirdContent.css);
+@import url(/styles/footer.css);
+@import url(/styles/util.css);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--main-font);
+    overflow-x: hidden;
+}
+
+
+
+:root {
+    --red: #759293;
+    --main-font: "Bebas Neue", sans-serif;
+    --second-font: "Big Shoulders Stencil", sans-serif;
+    --second-white: rgb(156, 154, 154);
+    --alike-font: "Alike", serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.container-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 35px;
+    background-color: var(--red);
+}
+
+.header-logo img {
+    width: 100px;
+}
+
+.header-menu-hamburguer {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+
+.img-first-content {
+    width: 100vw;
+    height: 70vh;
+    overflow-x: hidden;
+    background-image: url(/img/Img_banner_tapetes.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(70%);
+}
+
+.container-first-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    color: black;
+    position: absolute;
+    color: white;
+    top: 33%;
+    padding: 30px;
+    text-align: center;
+}
+
+.first-content h1 {
+    font-size: 35px;
+    padding: 0px 35px;
+}
+
+.first-content p {
+    font-family: var(--alike-font);
+    font-size: 25px;
+    font-weight: 700;
+    padding: 15px 35px;
+}
+.btn-first-content {
+    width: 200px;
+    font-size: 25px;
+    background-color: var(--red);
+    border: none;
+    padding: 10px;
+    border-radius: 50px;
+    color: white;
+}
+
+
+
+
+
+
+
+

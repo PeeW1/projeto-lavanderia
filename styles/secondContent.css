@@ -1,0 +1,84 @@
+.container-about-us {
+    padding: 30px 15px;
+}
+
+.container-about-us-card {
+    background-color: var(--red);
+    padding: 35px;
+    border-radius: 10px;
+    color: white;
+}
+
+.div-line {
+    width: 35%;
+    height: 2px;
+    background-color: white;
+}
+.div-line-secundario {
+    background-color: var(--red);
+}
+
+.about-us-h1 h1 {
+    font-size: 50px;
+}
+
+.about-us-p {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.btn-about-us {
+    background-color: var(--red);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.btn-about-us:hover {
+    background-color: white;
+    color: var(--red);
+}
+
+.services-text h1{
+    font-size: 50px;
+    color: var(--red);
+}
+
+.services-itens-title h1 {
+    color: var(--red);
+}
+
+.services-itens-icon img {
+    width: 80px;
+}
+
+.container-services {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 0px 15px;
+}
+
+.services-itens {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 15px;
+}
+
+.services-itens-icon {
+    display: flex;
+    align-items: start;
+}
+
+
+
+.container-services-itens {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 50%;
+}

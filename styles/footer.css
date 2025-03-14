@@ -1,0 +1,52 @@
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--red);
+    width: 100vw;
+    height: 100vh;
+    color: white;
+}
+.container-footer-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-footer-logo img {
+    width: 250px;
+}
+
+.container-opening-hours { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.opening-iten {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+.container-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.contact-iten {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
