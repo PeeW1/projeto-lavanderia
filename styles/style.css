@@ -17,14 +17,21 @@
 
 :root {
     --red: #759293;
+    --red2: #93b3b4;
     --main-font: "Bebas Neue", sans-serif;
     --second-font: "Big Shoulders Stencil", sans-serif;
     --second-white: rgb(156, 154, 154);
     --alike-font: "Alike", serif;
 }
 
+
 .hidden {
     display: none;
+}
+
+.no-overflow {
+    overflow: hidden;
+    height: 100vh;
 }
 
 .container-header{

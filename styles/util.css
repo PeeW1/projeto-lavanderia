@@ -7,7 +7,10 @@
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 90vh;
+    height: 84.1vh;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    overflow-x:  hidden;
 }
 
 
@@ -27,6 +30,16 @@
     border-radius: 20px;
     padding: 10px;
     background-color: #93b3b4;
-    width: 90vw;
+    width: 95vw;
     font-size: 20px;
+}
+
+.drop-menu-li-red {
+    border: 1px solid white;
+}
+
+
+.drop-menu-li a {
+    color: white;
+    text-decoration: none;
 }
