@@ -90,38 +90,3 @@
     font-size: 20px;
 }
 
-.container-delivery {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 20px;
-    background-color: #93b3b4;
-}
-
-.delivery-text h1 {
-    font-size: 35px;
-    color: white;
-    font-weight: 100;
-}
-
-.delivery-btn {
-    display: flex;
-    gap: 10px;
-    padding: 30px;
-}
-
-.btn-delivery {
-    padding: 10px;
-    border-radius: 50px;
-    border:none;
-    color: white;
-    width: 100px;
-    font-size: 20px;
-    background-color: blue;
-}
-
-.whats-btn {
-    background-color: rgb(132, 202, 27);
-    width: 150px;
-}
