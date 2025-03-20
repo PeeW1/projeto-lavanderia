@@ -9,30 +9,9 @@
     color: white;
 }
 
-.div-line {
-    width: 35%;
-    height: 2px;
-    background-color: white;
-}
-.div-line-secundario {
-    background-color: var(--red);
-}
 
-.about-us-h1 h1 {
-    font-size: 50px;
-}
-
-.about-us-p {
-    margin-top: 30px;
-    margin-bottom: 10px;
-}
-
-.btn-about-us {
-    background-color: var(--red);
-    border: 1px solid white;
-    border-radius: 5px;
-    padding: 10px;
-    color: white;
+.container-about-us-text {
+    margin: 15px 0px;
 }
 
 .btn-about-us:hover {
@@ -40,13 +19,12 @@
     color: var(--red);
 }
 
-.services-text h1{
-    font-size: 50px;
+.services-itens-title h1 {
     color: var(--red);
 }
 
-.services-itens-title h1 {
-    color: var(--red);
+.services-itens-title-white h1 {
+    color: white;
 }
 
 .services-itens-icon img {

@@ -31,7 +31,7 @@
 }
 
 .no-overflow {
-    overflow: hidden;
+    overflow-y: hidden;
     height: 100vh;
 }
 
@@ -108,6 +108,100 @@
     border-radius: 50px;
     color: white;
 }
+
+.div-line {
+    width: 35%;
+    height: 2px;
+    background-color: white;
+}
+
+.div-line-secundario {
+    background-color: var(--red);
+}
+
+.h1-white h1{
+    font-size: 50px;
+    color: white;
+}
+
+.h1-green h1{
+    font-size: 50px;
+    color: var(--red);
+}
+
+.p-white p{
+    font-size: 16px;
+    color: white;
+}
+
+.p-green p {
+    font-size: 16px;
+    color: var(--red);
+}
+
+.btn-green {
+    background-color: var(--red);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.btn-green:hover {
+    background-color: white;
+    color: var(--red);
+}
+
+.container-card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 50px 15px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    border-radius: 20px 0px 20px 0px;
+    color: white;
+    padding: 10px 0px;
+    gap: 5px;
+}
+
+.card-text {
+    width: 80%;
+}
+
+.card-secundario {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    border: 2px solid var(--red);
+    background-color: var(--red2);
+    padding: 15px;
+}
+.card-secundario-title {
+    font-size: 30px;
+}
+
+.card-secundario-content {
+    font-size: 20px;
+}
+.card-secundario img {
+    width: 50px;
+}
+.square-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--red);
+    color: white;
+    padding: 10px 0px;
+    gap: 5px;
+}
+
 
 
 

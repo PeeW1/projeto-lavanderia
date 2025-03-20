@@ -7,10 +7,10 @@
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height: 100vh;
+    height:  100vh;
     border-top: 2px solid white;
     border-bottom: 2px solid white;
-    overflow-x:  hidden;
+    overflow: hidden;
 }
 
 
@@ -30,7 +30,7 @@
     border-radius: 20px;
     padding: 10px;
     background-color: #93b3b4;
-    width: 95vw;
+    width: 90vw;
     font-size: 20px;
 }
 
