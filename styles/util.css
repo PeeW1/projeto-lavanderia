@@ -1,37 +1,64 @@
 .container-dropmenu {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     background-color: var(--red);
     position: absolute;
     z-index: 1;
     width: 100vw;
-    height:  100vh;
+    height: 100%;
     border-top: 2px solid white;
-    border-bottom: 2px solid white;
-    overflow: hidden;
+    position: fixed;
 }
 
 
 .drop-menu-ul {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: center; 
+    align-items: center;
+    gap: 30px;
     width: 100%;
+    height: 100%;
     text-decoration: none;
+    overflow: hidden;
+    top: 0;
+    padding-top: 80px;
 }
+
 
 .drop-menu-li {
     display: flex;
-    flex-direction: column;
+    gap: 10px;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
     padding: 10px;
     background-color: #93b3b4;
-    width: 90vw;
+    width: 75%;
     font-size: 20px;
+    animation: dropDown 0.5s 0.1s ease;
+}
+
+.drop-menu-li:nth-child(2) {
+    animation-duration:0.5s;
+	animation-delay:0.2s;
+}
+.drop-menu-li:nth-child(3) {
+    animation-duration: 0.5s;
+	animation-delay:0.3s;
+}
+.drop-menu-li:nth-child(4) {
+    animation-duration: 0.5s;
+	animation-delay:0.4s;
+}
+.drop-menu-li:nth-child(5) {
+    animation-duration: 0.5s;
+	animation-delay:0.5s;
+}
+.drop-menu-li:nth-child(6) {
+    animation-duration: 0.5;
+	animation-delay: 0.6s;
 }
 
 .drop-menu-li-red {
@@ -43,3 +70,32 @@
     color: white;
     text-decoration: none;
 }
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+
+
+
+.fade {
+    animation: fadeIn 0.5s ease-in-out;
+}
+

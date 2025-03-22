@@ -27,7 +27,7 @@
 
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .no-overflow {
@@ -41,6 +41,7 @@
     align-items: center;
     padding: 0px 35px;
     background-color: var(--red);
+    z-index: 1;
 }
 
 .header-logo img {
@@ -53,18 +54,7 @@
     border-radius: 5px;
     border-radius: 50%;
     padding: 10px;
-}
-
-
-.img-first-content {
-    width: 100vw;
-    height: 70vh;
-    overflow-x: hidden;
-    background-image: url(../img/Img_banner_tapetes.webp);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter:brightness(70%);
+    z-index: 1;
 }
 
 .container-first-content {
@@ -72,28 +62,105 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100vw;
+    height:70vh;
+    z-index: 1;
 }
 
-.first-content {
+.menu-tapete {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 15px;
-    color: black;
     position: absolute;
     color: white;
-    top: 33%;
-    padding: 30px;
     text-align: center;
+    z-index: 0;
 }
 
-.first-content h1 {
+.menu-tapete-bg {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../img/Img_banner_tapetes.webp);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(50%);
+    z-index: 0;
+}
+
+.menu-tapete-content {
+    position: absolute;
+}
+
+.menu-cobertor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    color: white;
+    text-align: center;
+    z-index: 0;
+}
+
+.menu-cobertor-bg {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../img/cobertor-bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(50%);
+    z-index: -1;
+}
+
+.menu-cobertor-content {
+    position: absolute;
+}
+
+.dot-container {
+    display: flex;
+    z-index: 0;
+    gap: 10px;
+    position: absolute;
+    bottom: 25%;
+    overflow: hidden;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+  }
+.menu-nav {
+    display: flex;
+    z-index: 1;
+}
+
+.menu-nav img {
+    width: 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.menus-h1 h1 {
     font-size: 35px;
     padding: 0px 35px;
 }
 
-.first-content p {
+.menus-p p {
     font-family: var(--alike-font);
     font-size: 25px;
     font-weight: 700;

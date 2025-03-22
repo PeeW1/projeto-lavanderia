@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./styles/style.css"/>
     <link rel="shortcut icon" type="imagex/png" href="./img/icons/logo3.png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_left" />
     <title>À Cabana</title>
 </head>
 <body>
@@ -29,20 +30,50 @@
             </ul>
         </div>
     </div>
-
-    <div class="img-first-content">
-
-    </div>
     
     <section class="container-first-content">
-        <div class="first-content">
-            <div class="first-content-h1">
-                <h1>LAVAGEM DE TAPETES</h1>
+
+        <div class="menu-tapete fade">
+            <div class="menu-tapete-bg">
+
             </div>
-            <div class="first-content-p">
-                <p>Seu tapete limpo novamente</p>
+            <div class="menu-tapete-content">
+                <div class="menus-h1">
+                    <h1>LAVAGEM DE TAPETES</h1>
+                </div>
+                <div class="menu-nav">
+                    <img src="./img/icons/keyboard_arrow_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow-left" class="img-arrow-left">
+                    <div class="menus-p">
+                        <p>Seu tapete limpo novamente</p>
+                    </div>
+                    <img src="./img/icons/keyboard_arrow_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow-right" class="img-arrow-right">
+                </div>
+                <button type="button" class="btn-first-content">FALE CONOSCO</button>
             </div>
-            <button type="button" class="btn-first-content">FALE CONOSCO</button>
+        </div>
+
+        <div class="menu-cobertor fade hidden">
+            <div class="menu-cobertor-bg">
+                
+            </div>
+            <div class="menu-cobertor-content">
+                <div class="menus-h1">
+                    <h1>LAVAGEM DE COBERTOR</h1>
+                </div>
+                <div class="menu-nav">
+                    <img src="./img/icons/keyboard_arrow_left_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow-left" class="img-arrow-left">
+                    <div class="menus-p">
+                        <p>SEU COBERTOR CHEIROSO NOVAMENTE</p>
+                    </div>
+                    <img src="./img/icons/keyboard_arrow_right_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.svg" alt="arrow-right" class="img-arrow-right">
+                </div>
+                <button type="button" class="btn-first-content">FALE CONOSCO</button>
+            </div>
+        </div>
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
         </div>
     </section>
 
@@ -293,6 +324,7 @@
         </div>
     </footer>
 
+
     <script src="script.js"></script>
 </body>
-</html>
+</html> 
