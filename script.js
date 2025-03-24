@@ -2,27 +2,51 @@ document.addEventListener("DOMContentLoaded", () => {
     const menuHamburger = document.querySelector(".header-menu-hamburguer");
     const imageMh = document.querySelector(".image-mh");
     const menuDropdown = document.querySelector(".container-dropmenu")
-    const menuTapete = document.querySelector(".menu-tapete")
-    const menuCobertor = document.querySelector(".menu-cobertor")
-    const arrowRight = document.querySelector(".img-arrow-right")
-    const arrowLeft = document.querySelector(".img-arrow-left")
+    const menusCarrocel = document.querySelectorAll(".menus-carrocel")
+    const menuNav = document.querySelector(".menu-nav");
+    const arrowLeft = document.querySelectorAll(".img-arrow-left");
+const arrowRight = document.querySelectorAll(".img-arrow-right");
+
+    console.log(menusCarrocel.length) 
+
+    console.log(arrowLeft, arrowRight)
+    
+
 
     const mhIcon = "./img/icons/menu_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg";
     const closeIcon = "./img/icons/close_24dp_000000_FILL0_wght400_GRAD0_opsz24.svg";
 
-    arrowRight.addEventListener("click", (e) => {
-        if(menuCobertor.classList.contains("hidden")) {
-            menuCobertor.classList.remove("hidden")
-            menuTapete.classList.add('hidden')
-        }else {
-            menuCobertor.classList.add("hidden")
-            menuTapete.classList.remove("hidden")
-        }
-        
+    let currentMenuIndex = 0;
+    
+    function showMenu(index) {
+        menusCarrocel.forEach(menu => menu.classList.remove("active"))
+        menusCarrocel[index].classList.add("active")  
+        console.log("Menu Atual: " + index);  
+    }
+
+    arrowRight.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            if (currentMenuIndex < menusCarrocel.length - 1) {
+                currentMenuIndex++;
+            } else {
+                currentMenuIndex = 0;
+            }
+            showMenu(currentMenuIndex);
+        });
+    });
+    
+    arrowLeft.forEach(arrow => {
+        arrow.addEventListener('click', () => {
+            if (currentMenuIndex > 0) {
+                currentMenuIndex--;
+            } else {
+                currentMenuIndex = menusCarrocel.length - 1;
+            }
+            showMenu(currentMenuIndex);
+        });
     });
 
-
-
+    
     menuHamburger.addEventListener('click', (e) => {
 
         console.log("clicou")

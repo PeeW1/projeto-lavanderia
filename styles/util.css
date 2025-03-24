@@ -83,7 +83,7 @@
 
 @keyframes dropDown {
     from {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(-500%);
     }
 

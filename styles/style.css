@@ -67,8 +67,8 @@
     z-index: 1;
 }
 
-.menu-tapete {
-    display: flex;
+.menus-carrocel {
+    display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -77,6 +77,10 @@
     color: white;
     text-align: center;
     z-index: 0;
+}
+
+.menus-carrocel.active{
+    display: flex;
 }
 
 .menu-tapete-bg {
@@ -90,20 +94,8 @@
     z-index: 0;
 }
 
-.menu-tapete-content {
+.menus-content {
     position: absolute;
-}
-
-.menu-cobertor {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
-    position: absolute;
-    color: white;
-    text-align: center;
-    z-index: 0;
 }
 
 .menu-cobertor-bg {
@@ -117,9 +109,17 @@
     z-index: -1;
 }
 
-.menu-cobertor-content {
-    position: absolute;
+.menu-roupa-bg {
+    width: 100vw;
+    height: 70vh;
+    background-image: url(../img/clothes-bg.jpg);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter:brightness(50%);
+    z-index: -1;
 }
+
 
 .dot-container {
     display: flex;
@@ -166,6 +166,7 @@
     font-weight: 700;
     padding: 15px 35px;
 }
+
 .btn-first-content {
     width: 200px;
     font-size: 25px;
