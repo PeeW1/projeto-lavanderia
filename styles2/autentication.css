@@ -36,6 +36,12 @@ body {
 
 .form-autentication input {
     border: 2px solid var(--red);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.form-autentication input::placeholder {
+    color: var(--red);
 }
 
 .container-autentication-user {

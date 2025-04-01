@@ -1,0 +1,85 @@
+@import url(../styles/style.css);
+@import url(../styles/secondContent.css);
+@import url(../styles/thirdContent.css);
+@import url(../styles/fourthContent.css);
+@import url(../styles/util.css);
+@import url(../styles/footer.css);
+
+@media (min-width: 720px) {
+    /* HEADER */
+    .header-menu-hamburguer {
+        display: none;
+    }
+    .header-nav {
+        display: block;
+    }
+    .header-menu-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-menu-ul a {
+        text-decoration: none;
+        color: white;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .header-menu-li:hover a{
+        color: rgb(201, 200, 200);
+        font-size: 30px;
+        transition: 0.3s;
+    }
+
+    .header-menu-li-red {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .header-menu-li-red a{
+        color: white;
+    }
+    /* HEADER */
+    .h1-green h1 {
+        font-size: 80px;
+       }
+       .container-about-us img {
+        width: 500px;
+       }
+       .card-secundario {
+        justify-content: center;
+        align-items: center;
+        width: 350px;
+        height: 350px;
+        color: white;
+       }
+       .card-secundario-icon img {
+        width: 80px;
+       }
+
+       .card-secundario-title {
+        font-size: 35px;
+       }
+
+       .card-secundario-content {
+        font-size: 25px;
+       }
+       .container-localisation {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1024px) {
+    .header-logo img{
+        width: 150px;
+    }
+    .header-menu-ul a {
+        font-size: 30px;
+    }
+
+    .header-menu-li:hover a {
+        font-size: 40px;
+    }
+}

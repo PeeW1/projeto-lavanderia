@@ -1,0 +1,222 @@
+@import url(../styles/style.css);
+@import url(../styles/secondContent.css);
+@import url(../styles/thirdContent.css);
+@import url(../styles/fourthContent.css);
+@import url(../styles/util.css);
+@import url(../styles/footer.css);
+
+
+
+/* INDEX */
+@media (min-width: 720px) {
+    /* HEADER */
+    .header-menu-hamburguer {
+        display: none;
+    }
+    .header-nav {
+        display: block;
+    }
+    .header-menu-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-menu-ul a {
+        text-decoration: none;
+        color: white;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .header-menu-li:hover a{
+        color: rgb(201, 200, 200);
+        font-size: 30px;
+        transition: 0.3s;
+    }
+
+    .header-menu-li-red {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .header-menu-li-red a{
+        color: white;
+    }
+    /* HEADER */
+
+    /* FIRST CONTENT */
+    .menu-nav {
+        gap: 20vw;
+    }
+
+    .menu-nav img{
+        width: 100px;
+    }
+    /* FIRST CONTENT */
+
+    /* SECOND CONTENT */
+    .container-second-content {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+    }
+
+    .container-about-us {
+        padding: 0px 0px 50px 0px;
+    }
+
+    .container-services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .services-itens {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .container-services-itens {
+        width: 100%;
+        padding: 0;
+    }
+    .services-itens-icon img {
+        width: 100px;
+    }
+
+    .services-itens-title h1 {
+        font-size: 35px;
+    }
+
+    .services-itens-text p {
+        font-size: 20px;
+    }
+    /* SECOND CONTENT */
+
+    /* THIRD CONTENT */
+    .container-card {
+        padding: 0px 70px 100px 70px;
+    }
+
+    .container-localisation {
+        padding: 0;
+    }
+
+    .prices-text {
+        width: 60%;
+    }
+    .prices-h1 h1{
+        font-size: 30px;
+    }
+    .prices-p p {
+        font-size: 20px
+    }
+
+    /* THIRD CONTENT */
+
+    /* FOURTH CONTENT */
+    .container-text-area {
+        padding: 0px 70px;
+    }
+    /* FOURTH CONTENT */
+}
+
+@media (min-width: 1024px) {
+    /* HEADER */
+    .container-header {
+        padding: 0px 100px;
+    }
+    .header-logo img{
+        width: 150px;
+    }
+    .header-menu-ul {
+        gap: 25px;
+    }
+    .header-menu-ul a {
+        font-size: 30px;
+    }
+
+    .header-menu-li:hover a {
+        font-size: 35px;
+    }
+    /* HEADER */
+
+    /* SECOND CONTENT */
+    .container-second-content {
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+    }
+
+    .container-about-us {
+        width: 80%;
+    }
+
+    .services-itens {
+        width: 25%;
+        height: 250px;
+    }
+
+    .container-services-itens {
+        flex-direction: row;
+    }
+    /* SECOND CONTENT */
+
+    /* THIRD CONTENT */
+
+    .container-card {
+        display: flex;
+        width: 100%;
+        padding-bottom: 100px;
+    }
+    
+    .card {
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+    }
+
+
+    .container-localisation {
+        align-items: center;
+        width: 100%;
+    }
+
+    .container-localisation iframe {
+        width: 70%;
+    }
+
+    .prices-text {
+        width: 50%;
+    }
+    .prices-h1 h1{
+        font-size: 30px;
+    }
+    .prices-p p {
+        font-size: 20px
+    }
+    /* THIRD CONTENT */
+
+    /* FOURTH CONTENT */
+    .container-text-area {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .container-text-area-form {
+        width: 70%;
+    }
+    
+    /* FOURTH CONTENT */
+}
+/* INDEX */

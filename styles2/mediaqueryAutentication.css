@@ -1,0 +1,96 @@
+@import url(../styles/style.css);
+@import url(../styles/secondContent.css);
+@import url(../styles/thirdContent.css);
+@import url(../styles/fourthContent.css);
+@import url(../styles/util.css);
+@import url(../styles/footer.css);
+
+
+@media (min-width: 728px) {
+    /* HEADER */
+    .header-menu-hamburguer {
+        display: none;
+    }
+    .header-nav {
+        display: block;
+    }
+    .header-menu-ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .header-menu-ul a {
+        text-decoration: none;
+        color: white;
+        gap: 10px;
+        font-size: 20px;
+    }
+
+    .header-menu-li:hover a{
+        color: rgb(201, 200, 200);
+        font-size: 30px;
+        transition: 0.3s;
+    }
+
+    .header-menu-li-red {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+    .header-menu-li-red a{
+        color: white;
+    }
+    /* HEADER */
+    .container-autentication {
+        width: 50vw;
+        height: 50vh;
+    }
+
+    .form-autentication {
+        width: 100%;
+    }
+
+    .form-autentication input {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .form-autentication label {
+        font-size: 20px;
+    }
+
+    .container-autentication-user  {
+        width: 50%;
+    }
+
+    .container-autentication-password {
+        width: 50%;
+    }
+    .container-autentication-btn button{
+        padding: 20px 30px;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* HEADER */
+    .container-header {
+        padding: 0px 100px;
+    }
+    .header-logo img{
+        width: 150px;
+    }
+    .header-menu-ul {
+        gap: 25px;
+    }
+    .header-menu-ul a {
+        font-size: 30px;
+    }
+
+    .header-menu-li:hover a {
+        font-size: 35px;
+    }
+    /* HEADER */
+}
